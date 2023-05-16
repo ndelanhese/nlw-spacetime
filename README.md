@@ -6,8 +6,6 @@ This repository contains the project proposed in the NLW (Next Level Week) by Ro
 
 The project is built using various technologies and frameworks, including:
 
-- Next.js: A popular React framework for building server-side rendered and statically generated applications.
-- Tailwind CSS: A utility-first CSS framework that helps in rapidly building custom user interfaces.
 - Node.js: A JavaScript runtime environment for building server-side and networking applications.
 - Fastify: A fast and low overhead web framework for Node.js.
 - TypeScript: A typed superset of JavaScript that compiles to plain JavaScript.
