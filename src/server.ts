@@ -16,7 +16,7 @@ app.register(authRoutes)
 app
   .listen({
     port: appPort,
-    // host: '0.0.0.0',
+    host: '0.0.0.0',
   })
   .then(() => {
     console.log(`Server is running on port ${appPort}`)

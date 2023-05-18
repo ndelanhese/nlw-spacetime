@@ -1,5 +1,10 @@
 { 
     "extends" : [
         "@rocketseat/eslint-config/node"
+    ],
+    "ignorePatterns":[
+        "**.d.ts",
+        "node_modules",
+        ".vscode"
     ]
 }
