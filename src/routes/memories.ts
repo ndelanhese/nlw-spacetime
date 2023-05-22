@@ -42,7 +42,7 @@ export async function memoriesRoutes(app: FastifyInstance) {
     const { content, coverUrl, isPublic } = bodySchema.parse(request.body)
     return await prisma.memory.create({
       data: {
-        content,
+        content: content.trim(),
         coverUrl,
         isPublic,
         userId: request.user.sub,
@@ -69,7 +69,7 @@ export async function memoriesRoutes(app: FastifyInstance) {
 
     return await prisma.memory.update({
       where: { id },
-      data: { content, coverUrl, isPublic },
+      data: { content: content.trim(), coverUrl, isPublic },
     })
   })
 
